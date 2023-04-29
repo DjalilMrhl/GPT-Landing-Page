@@ -1,0 +1,191 @@
+header {
+  padding: 3rem 2rem;
+  padding-bottom: 0;
+}
+@media (max-width: 320px) {
+  header {
+    padding-inline: 0.5rem;
+  }
+}
+@media screen and (min-width: 1800px) {
+  header {
+    font-size: 2rem;
+  }
+}
+header .header--container {
+  width: 100%;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+}
+@media screen and (min-width: 2000px) {
+  header .header--container {
+    grid-template-columns: repeat(auto-fit, minmax(900px, 1fr));
+  }
+}
+@media screen and (min-width: 1050px) and (max-width: 1559px) {
+  header .header--container {
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  }
+}
+@media screen and (min-width: 1560px) and (max-width: 1999px) {
+  header .header--container {
+    grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+  }
+}
+@media screen and (max-width: 700px) {
+  header .header--container {
+    display: block;
+  }
+}
+header .header--container .description {
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+header .header--container .description h1 {
+  font-weight: 800;
+  font-size: 2.5rem;
+  line-height: 50px;
+}
+@media screen and (min-width: 2000px) {
+  header .header--container .description h1 {
+    line-height: 100px;
+    font-size: 4rem;
+  }
+}
+@media (max-width: 903px) {
+  header .header--container .description h1 {
+    max-width: 700px;
+  }
+}
+@media (max-width: 320px) {
+  header .header--container .description h1 {
+    font-size: 1.8rem;
+    line-height: 40px;
+  }
+}
+header .header--container .description p {
+  max-width: 600px;
+}
+@media screen and (min-width: 2000px) {
+  header .header--container .description p {
+    min-width: 1200px;
+    line-height: 60px;
+  }
+}
+@media (max-width: 320px) {
+  header .header--container .description p {
+    font-size: 0.9rem;
+  }
+}
+header .header--container .description form {
+  width: 100%;
+}
+@media screen and (min-width: 2000px) {
+  header .header--container .description form {
+    display: flex;
+    align-items: stretch;
+  }
+}
+header .header--container .description form input {
+  width: 60%;
+  padding: 0.8rem 2rem;
+  background-color: #052D56;
+  border-radius: 5px 0px 0px 5px;
+  border: none;
+  outline: none;
+}
+@media screen and (min-width: 2000px) {
+  header .header--container .description form input {
+    padding-block: 4rem;
+    border-radius: 25px;
+  }
+  header .header--container .description form input::-moz-placeholder {
+    font-size: 2rem;
+  }
+  header .header--container .description form input::placeholder {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 320px) {
+  header .header--container .description form input {
+    width: 50%;
+    padding-block: 0.5rem;
+  }
+}
+header .header--container .description form input::-moz-placeholder {
+  text-transform: capitalize;
+  color: var(--clr-light);
+}
+header .header--container .description form input::placeholder {
+  text-transform: capitalize;
+  color: var(--clr-light);
+}
+@media (max-width: 320px) {
+  header .header--container .description form input::-moz-placeholder {
+    font-size: 10px;
+  }
+  header .header--container .description form input::placeholder {
+    font-size: 10px;
+  }
+}
+header .header--container .description form button {
+  height: 100%;
+  font-weight: 700;
+  border-radius: 0px 5px 5px 0px;
+}
+@media screen and (min-width: 2000px) {
+  header .header--container .description form button {
+    width: 30%;
+    font-size: 2rem;
+  }
+}
+@media (max-width: 320px) {
+  header .header--container .description form button {
+    padding-block: 0.5rem;
+  }
+}
+header .header--container .description .people-reviews {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 6px;
+  margin-bottom: 1rem;
+}
+@media screen and (max-width: 400px) {
+  header .header--container .description .people-reviews {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+header .header--container .description .people-reviews #people {
+  background-color: transparent;
+  color: black;
+}
+header .header--container .description .people-reviews p {
+  color: var(--clr-white);
+  font-size: 12px;
+}
+header .header--container #ai {
+  width: 100%;
+}
+header .header--container footer {
+  grid-column: 1/-1;
+  margin-top: 1rem;
+}
+header .header--container footer .footer--container {
+  width: min(90%, 600px);
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  justify-content: space-evenly;
+}
+header .header--container footer .footer--container img {
+  width: min(15%, 100px);
+}/*# sourceMappingURL=Header.css.map */

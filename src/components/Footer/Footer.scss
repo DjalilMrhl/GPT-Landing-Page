@@ -1,0 +1,80 @@
+.footer {
+    padding: 4rem 2rem 0;
+    background-color: var(--clr-bg-variant);
+    cursor: default;
+    @media screen and (max-width: 550px) {
+        padding-inline: 0;
+    }
+    &--container {
+        text-align: center;
+        width: 90%;
+        margin-inline: auto;
+        padding-bottom: .5rem;
+        h1 {
+            width: min(100%,700px);
+            margin-inline: auto;
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            @media screen and (max-width:425px) {
+                font-size: clamp(1.2rem, 5vw,2.5rem);
+            }
+        }
+        button {
+            padding: 1em .5em;
+            border: 1px solid var(--clr-white);
+            background-color: var(--clr-bg-variant);
+            cursor: pointer;
+            margin-bottom: 4rem;
+        }
+        .informations {
+            text-align: start;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 2rem;
+            @media screen and (max-width:602px) {
+                display: block;
+            }
+            .brand {
+                flex: .25;
+                @media screen and (max-width:602px) {
+                    text-align: center;
+                    margin-bottom: 1rem;
+                    img {
+                        margin-bottom: 1rem;
+                    }
+                }
+            }
+            .list {
+                flex: .75;
+                display: flex;
+                justify-content: flex-end;
+                gap: 1rem 2rem;
+                @media screen and (max-width:400px) {
+                    flex-direction: column;
+                    text-align: center;
+                    ul {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        gap: 10px;
+                    }
+                }
+                li {
+                    font-size: .75rem;
+                    margin-bottom: 2px;
+                }
+                h4 {
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+        p {
+            font-size: .75rem;
+            color: var(--clr-white);
+        }
+        > p {
+            margin-top: 2rem;
+        }
+    }
+}

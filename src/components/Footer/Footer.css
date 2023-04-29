@@ -1,0 +1,90 @@
+.footer {
+  padding: 4rem 2rem 0;
+  background-color: var(--clr-bg-variant);
+  cursor: default;
+}
+@media screen and (max-width: 550px) {
+  .footer {
+    padding-inline: 0;
+  }
+}
+.footer--container {
+  text-align: center;
+  width: 90%;
+  margin-inline: auto;
+  padding-bottom: 0.5rem;
+}
+.footer--container h1 {
+  width: min(100%, 700px);
+  margin-inline: auto;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+@media screen and (max-width: 425px) {
+  .footer--container h1 {
+    font-size: clamp(1.2rem, 5vw, 2.5rem);
+  }
+}
+.footer--container button {
+  padding: 1em 0.5em;
+  border: 1px solid var(--clr-white);
+  background-color: var(--clr-bg-variant);
+  cursor: pointer;
+  margin-bottom: 4rem;
+}
+.footer--container .informations {
+  text-align: start;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+@media screen and (max-width: 602px) {
+  .footer--container .informations {
+    display: block;
+  }
+}
+.footer--container .informations .brand {
+  flex: 0.25;
+}
+@media screen and (max-width: 602px) {
+  .footer--container .informations .brand {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .footer--container .informations .brand img {
+    margin-bottom: 1rem;
+  }
+}
+.footer--container .informations .list {
+  flex: 0.75;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem 2rem;
+}
+@media screen and (max-width: 400px) {
+  .footer--container .informations .list {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer--container .informations .list ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+  }
+}
+.footer--container .informations .list li {
+  font-size: 0.75rem;
+  margin-bottom: 2px;
+}
+.footer--container .informations .list h4 {
+  margin-bottom: 1rem;
+}
+.footer--container p {
+  font-size: 0.75rem;
+  color: var(--clr-white);
+}
+.footer--container > p {
+  margin-top: 2rem;
+}/*# sourceMappingURL=Footer.css.map */

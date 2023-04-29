@@ -1,0 +1,52 @@
+.casestudies {
+    background-color: var(--clr-bg);
+    padding: 2rem;
+    padding-bottom: 0;
+    @media screen and (max-width:800px) {
+        padding-inline: 0;
+    }
+    &--container {
+        width: 90%;
+        margin-inline: auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(380px,1fr));
+        align-items: flex-end;
+        gap: 1rem;
+        @media screen and (min-width:1900px) {
+            grid-template-columns: repeat(auto-fill,minmax(800px,1fr));
+        }
+        @media screen and (min-width:1750px) and (max-width:1899px) {
+            grid-template-columns: repeat(auto-fill,minmax(700px,1fr));
+        }
+        @media screen and (min-width:1200px) and (max-width:1749px) {
+            grid-template-columns: repeat(auto-fill,minmax(500px,1fr));
+        }
+        @media screen and (max-width:950px) {
+            grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+        }
+        @media screen and (max-width:320px) {
+            display: block;
+            > *:first-child {
+                margin-bottom: 1rem;
+            }
+        }
+        img {
+            width: 100%;
+            position: relative;
+        }
+        .content {
+            > * {
+                margin-bottom: 1rem;
+            }
+            p {
+                &:first-child {
+                    color: var(--clr-blue);
+                }
+                &:last-child {
+                    color: var(--clr-orange-variant);
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

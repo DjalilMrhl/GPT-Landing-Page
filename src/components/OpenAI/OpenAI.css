@@ -1,0 +1,124 @@
+.openai {
+  background-color: var(--clr-bg);
+  padding: 3rem 1rem;
+  padding-bottom: 0;
+}
+@media screen and (max-width: 800px) {
+  .openai {
+    padding-inline: 0;
+  }
+}
+.openai--container {
+  width: 90%;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+@media screen and (min-width: 2000px) {
+  .openai--container {
+    font-size: 2rem;
+  }
+  .openai--container h1, .openai--container h3 {
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 1999px) {
+  .openai--container {
+    font-size: 1.5rem;
+  }
+  .openai--container h1, .openai--container h3 {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 758px) {
+  .openai--container {
+    flex-wrap: wrap;
+  }
+}
+.openai--container .col-1 {
+  min-height: 150px;
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 2000px) {
+  .openai--container .col-1 {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 1999px) {
+  .openai--container .col-1 {
+    font-size: 1.8rem;
+  }
+}
+.openai--container .col-1 h1 {
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+@media screen and (min-width: 2000px) {
+  .openai--container .col-1 h1 {
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 1999px) {
+  .openai--container .col-1 h1 {
+    font-size: 2.4rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .openai--container .col-1 h1 {
+    font-size: 1.5rem;
+  }
+}
+.openai--container .col-1 p {
+  margin-top: 20px;
+  color: var(--clr-orange-variant);
+}
+.openai--container .col-2 {
+  padding: 1rem 0;
+}
+@media screen and (max-width: 500px) {
+  .openai--container .col-2 {
+    padding-inline: 0;
+  }
+}
+.openai--container .col-2 .feature {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.25rem 1rem;
+  margin-bottom: 1.5rem;
+}
+@media screen and (max-width: 500px) {
+  .openai--container .col-2 .feature {
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+}
+.openai--container .col-2 .feature h3 {
+  font-size: 1.125rem;
+  position: relative;
+  flex-basis: 30%;
+}
+@media screen and (min-width: 2000px) {
+  .openai--container .col-2 .feature h3 {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 1999px) {
+  .openai--container .col-2 .feature h3 {
+    font-size: 1.6rem;
+  }
+}
+.openai--container .col-2 .feature p {
+  font-size: 0.875rem;
+  flex-basis: 60%;
+}
+@media screen and (min-width: 2000px) {
+  .openai--container .col-2 .feature p {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 1999px) {
+  .openai--container .col-2 .feature p {
+    font-size: 1.2rem;
+  }
+}/*# sourceMappingURL=OpenAI.css.map */

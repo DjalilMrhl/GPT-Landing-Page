@@ -1,0 +1,130 @@
+.blogs {
+  background-color: var(--clr-bg);
+  padding: 5rem 2rem 1rem;
+}
+@media screen and (max-width: 550px) {
+  .blogs {
+    padding-inline: 0;
+  }
+}
+.blogs--container {
+  width: 90%;
+  margin-inline: auto;
+}
+.blogs--container h1 {
+  font-size: 3rem;
+  width: min(100%, 700px);
+  margin-bottom: 3rem;
+}
+@media screen and (max-width: 490px) {
+  .blogs--container h1 {
+    font-size: clamp(1.7rem, 10vw, 2.5rem);
+  }
+}
+.blogs--container .content {
+  display: flex;
+  gap: 1rem;
+}
+@media screen and (max-width: 930px) {
+  .blogs--container .content {
+    flex-direction: column-reverse;
+  }
+}
+@media screen and (max-width: 550px) {
+  .blogs--container .content {
+    gap: 0;
+  }
+}
+.blogs--container .content .card-contentA {
+  height: 100%;
+  padding-left: 0.5rem;
+  padding-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media screen and (max-width: 550px) {
+  .blogs--container .content .card-contentA {
+    row-gap: 1rem;
+  }
+}
+.blogs--container .content .card-contentA h3 {
+  font-size: 1.2rem;
+  font-weight: 800;
+  width: 90%;
+  padding-left: 10px;
+  flex: 10;
+}
+@media screen and (max-width: 550px) {
+  .blogs--container .content .card-contentA h3 {
+    font-size: 0.8rem;
+    font-weight: 800;
+    width: 90%;
+    padding-left: 10px;
+    flex: 10;
+  }
+}
+.blogs--container .content .card-contentA span {
+  margin-bottom: 2rem;
+}
+@media screen and (max-width: 550px) {
+  .blogs--container .content .card-contentA span {
+    margin-bottom: 0;
+  }
+}
+.blogs--container .content .card-contentB {
+  height: 100%;
+  padding-left: 0.5rem;
+  padding-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 1rem;
+}
+.blogs--container .content .card-contentB h3 {
+  font-size: 0.8rem;
+  font-weight: 800;
+  width: 90%;
+  padding-left: 10px;
+  flex: 10;
+}
+.blogs--container .content span {
+  font-size: 11.649px;
+  flex: 0.5;
+}
+.blogs--container .content a {
+  font-size: 0.6rem;
+  flex: 0.5;
+  margin-top: 3rem;
+}
+.blogs--container .content img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.blogs--container .content .card--1 {
+  background-color: var(--clr-bg-variant);
+  flex: 0.75;
+  display: flex;
+  flex-direction: column;
+}
+.blogs--container .content .cards {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+}
+@media screen and (max-width: 550px) {
+  .blogs--container .content .cards {
+    display: block;
+  }
+  .blogs--container .content .cards > * {
+    margin-bottom: 1rem;
+  }
+}
+.blogs--container .content .cards .card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--clr-bg-variant);
+}/*# sourceMappingURL=Blogs.css.map */

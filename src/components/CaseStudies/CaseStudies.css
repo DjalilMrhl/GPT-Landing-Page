@@ -1,0 +1,60 @@
+.casestudies {
+  background-color: var(--clr-bg);
+  padding: 2rem;
+  padding-bottom: 0;
+}
+@media screen and (max-width: 800px) {
+  .casestudies {
+    padding-inline: 0;
+  }
+}
+.casestudies--container {
+  width: 90%;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  align-items: flex-end;
+  gap: 1rem;
+}
+@media screen and (min-width: 1900px) {
+  .casestudies--container {
+    grid-template-columns: repeat(auto-fill, minmax(800px, 1fr));
+  }
+}
+@media screen and (min-width: 1750px) and (max-width: 1899px) {
+  .casestudies--container {
+    grid-template-columns: repeat(auto-fill, minmax(700px, 1fr));
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1749px) {
+  .casestudies--container {
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  }
+}
+@media screen and (max-width: 950px) {
+  .casestudies--container {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+@media screen and (max-width: 320px) {
+  .casestudies--container {
+    display: block;
+  }
+  .casestudies--container > *:first-child {
+    margin-bottom: 1rem;
+  }
+}
+.casestudies--container img {
+  width: 100%;
+  position: relative;
+}
+.casestudies--container .content > * {
+  margin-bottom: 1rem;
+}
+.casestudies--container .content p:first-child {
+  color: var(--clr-blue);
+}
+.casestudies--container .content p:last-child {
+  color: var(--clr-orange-variant);
+  margin-bottom: 0;
+}/*# sourceMappingURL=CaseStudies.css.map */

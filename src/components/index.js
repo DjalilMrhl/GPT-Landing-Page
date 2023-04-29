@@ -1,0 +1,8 @@
+export { default as NavBar } from './NavBar/NavBar'
+export { default as Header } from './Header/Header'
+export { default as About } from './About/About'
+export { default as CaseStudies } from './CaseStudies/CaseStudies'
+export { default as OpenAI } from './OpenAI/OpenAI'
+export { default as Register } from './Register/Register'
+export { default as Blogs } from './Blogs/Blogs'
+export { default as Footer } from './Footer/Footer'

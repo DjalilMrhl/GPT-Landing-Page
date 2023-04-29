@@ -1,0 +1,94 @@
+.openai {
+    background-color: var(--clr-bg);
+    padding: 3rem 1rem;
+    padding-bottom: 0;
+    @media screen and (max-width:800px) {
+        padding-inline: 0;
+    }
+    &--container {
+        width: 90%;
+        margin-inline: auto;
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        @media screen and (min-width: 2000px) {
+            font-size: 2rem;
+            h1,h3 {
+                font-size: 3rem;
+            }
+        }
+        @media screen and (min-width: 1440px) and (max-width: 1999px) {
+            font-size: 1.5rem;
+            h1,h3 {
+                font-size: 2.5rem;
+            }
+        }
+        @media screen and (max-width:758px) {
+        flex-wrap: wrap;
+        }
+        .col-1 {
+            min-height: 150px;
+            margin-bottom: 1rem;
+            @media screen and (min-width: 2000px) {
+                    font-size: 2rem;
+            }
+            @media screen and (min-width: 1440px) and (max-width: 1999px) {
+                    font-size: 1.8rem;
+            }
+            h1 {
+                font-size: 1.4rem;
+                font-weight: 800;
+                @media screen and (min-width: 2000px) {
+                    font-size: 3rem;
+                }
+                @media screen and (min-width: 1440px) and (max-width: 1999px) {
+                       font-size: 2.4rem;
+                }
+                @media screen and (max-width:320px) {
+                    font-size: 1.5rem;
+                }
+            }
+            p {
+                margin-top: 20px;
+                color: var(--clr-orange-variant);
+            }
+        }
+        .col-2 {
+            padding: 1rem 0;
+            @media screen and (max-width:500px) {
+                padding-inline: 0;
+            }
+            .feature {
+                display: flex;
+                justify-content: space-between;
+                gap: .25rem 1rem;
+                margin-bottom: 1.5rem;
+                @media screen and (max-width:500px) {
+                    flex-direction: column;
+                    row-gap: 1rem;
+                }
+                h3 {
+                    font-size: 1.125rem;
+                    position: relative;
+                    flex-basis: 30%;
+                    @media screen and (min-width: 2000px) {
+                        font-size: 1.8rem;
+                    }
+                    @media screen and (min-width: 1440px) and (max-width: 1999px) {
+                            font-size: 1.6rem;
+                    }
+                }
+                p {
+                    font-size: .875rem;
+                    flex-basis: 60%;
+                    @media screen and (min-width: 2000px) {
+                        font-size: 1.5rem;
+                    }
+                    @media screen and (min-width: 1440px) and (max-width: 1999px) {
+                            font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+}
